@@ -6,6 +6,8 @@
 
 @theme inline {
   --color-background: var(--background);
+  /* 메인 콘텐츠 배경 (사이드바 카드 등) */
+  --color-content: var(--content);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
@@ -51,20 +53,25 @@
 :root {
   /* 기본 배경색 */
   --background: oklch(0.1344 0 0);
+  /* 메인 콘텐츠 배경색 */
+  --content: oklch(0.1795 0.0038 164.58);
   /* 기본 글자색, 아이콘 색상 */
   --foreground: oklch(0.9556 0.0035 174.48);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  /* 드롭다운 메뉴 배경색 */
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
+  /* ghost 버튼(검색, 사이드바 여닫기 등) hover 배경색 */
+  --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  /* 드롭다운 항목 hover 배경색 */
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   /* 기본 선 색상 */
   --border: oklch(0.2857 0.0046 174.11);
@@ -85,9 +92,9 @@
   /* primary 배경 위에 올라가는 글자색, 아이콘 색상 */
   --sidebar-primary-foreground: oklch(0.985 0 0);
   /* 메뉴 hover, active 등 강조 상태에서 사용하는 배경색 */
-  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
   /* accent 배경 위에 올라가는 글자색, 아이콘 색상 */
-  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
   /* 사이드바 내부 또는 경계선 색상 */
   --sidebar-border: oklch(0.2857 0.0046 174.11);
   /* 버튼이나 메뉴가 focus 상태일 때 표시되는 focus ring 색상 */

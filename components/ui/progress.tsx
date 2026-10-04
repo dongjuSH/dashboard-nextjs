@@ -17,7 +17,7 @@ function Progress({
       className={cn("flex flex-wrap gap-3", className)}
       {...props}
     >
-      {children || ( // 기존 고정 되어 있던 구조에서 children이 없으면 기본 프로그레스 생성
+      {children || ( // children이 있으면 커스텀 구조를 사용하고, 없으면 기존 기본 구조를 사용
         <ProgressTrack>
           <ProgressIndicator />
         </ProgressTrack>
